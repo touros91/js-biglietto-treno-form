@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolo del prezzo del biglietto del treno</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    <div class="container">
+        <div class="form-input">
+            <label for="nome">Nome e Cognome</label>
+            <input type="text" name="nome" id="nome" placeholder="Inserisci nome e cognome" size="25" minlength="2" required>
+            
+            <label for="chilomentri">Km da percorrere</label>
+            <input type="number" name="chilometri" id="chilometri" required>
+            
+            <label for="">Fascia d'età</label>
+            <select name="eta" id="eta" required>Fascia d'età
+                <option value="">Seleziona fascia d'età</option>
+                <option value="minorenne">Minorenne</option>
+                <option value="maggiorenne">Maggiorenne</option>
+                <option value="over65">Over 65</option>
+            </select>
+            <div class="buttons">
+                <button id="genera">Genera</button>
+                <button id="annulla">Annulla</button>
+            </div>
+        </div>
+    </div>
+    <h1>IL TUO BIGLIETTO</h1>
+    <div class="container">
+        <div class="info-biglietto">
+            <h3>DETTAGLI PASSEGGERI</h3>
+            <table>
+                
+                <tr>
+                    <th>NOME PASSEGGERO</th>
+                    <th>Offerta </th>
+                    <th>Carrozza </th>
+                    <th>Codice CP </th>
+                    <th>Prezzo </th>
+
+                </tr>
+                <tr>
+                    <td id="nome-passeggero">asdijbafiufe</td>
+                    <td id="offerta">adkjbefjsdJADOUFEUOFFRW</td>
+                    <td id="carrozza">66</td>
+                    <td id="codice-prenotazione">43439494</td>
+                    <td id="prezzo">123</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
