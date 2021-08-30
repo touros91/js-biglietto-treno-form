@@ -85,10 +85,6 @@ th, td {
     display: none;
 }
 
-table {
-    text-align: center;
-}
-
 .biglietto.biglietto-aperto {
     display: block;
 }
@@ -107,4 +103,13 @@ table {
 
 .biglietto h1 {
     margin-bottom: 0;
+}
+
+.tabella {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+th {
+    text-align: left;
 }
