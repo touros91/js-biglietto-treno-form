@@ -9,20 +9,31 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+h1:first-child{
+    margin-top: 15px;
+}
+
 h1 {
     text-align: center;
     color: white;
-}
+ }
 
 .container {
     max-width: 80%;
     margin: auto;
     background-color: white;
+}
+
+.container:last-child {
     border-radius: 10px;
 }
 
-.form-input, .info-biglietto {
-    padding: 20px;
+.form-input {
+    margin: 20px;
+}
+
+.form-input, .info-biglietto-aperto {
+    padding: 25px;
 }
 
 .buttons {
@@ -32,4 +43,16 @@ h1 {
 
 th, td {
     padding: 20px;
+}
+
+.biglietto {
+    display: none;
+}
+
+.biglietto.biglietto-aperto {
+    display: block;
+}
+
+.biglietto.biglietto-chiuso {
+    display: none;
 }
