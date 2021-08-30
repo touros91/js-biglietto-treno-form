@@ -18,8 +18,11 @@ h1 {
     max-width: 80%;
     margin: auto;
     background-color: white;
-    height: 200px;
     border-radius: 10px;
+}
+
+.form-input, .info-biglietto {
+    padding: 20px;
 }
 
 .buttons {
