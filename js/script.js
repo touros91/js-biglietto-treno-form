@@ -22,7 +22,7 @@ bottoneGenera.addEventListener('click',
             eta = "Biglietto Standard";
         }
 
-        document.getElementById("nome-passeggero").innerHTML = nominativo.value;
+        document.getElementById("nome-passeggero").innerHTML = "<strong>" + nominativo.value + "</strong>";
         document.getElementById("offerta").innerHTML = eta;
         document.getElementById("carrozza").innerHTML = Math.floor(Math.random() * 10) + 1;
         document.getElementById("codice-prenotazione").innerHTML = Math.floor(Math.random() * 9999) + 90000;

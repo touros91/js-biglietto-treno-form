@@ -9,36 +9,72 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h1:first-child{
-    margin-top: 15px;
-}
-
-h1 {
+h1{
+    margin: 20px 0;
     text-align: center;
     color: white;
- }
+}
+
+h1:last-child {
+    margin-bottom: 0;
+}
 
 .container {
     max-width: 80%;
     margin: auto;
     background-color: white;
+    border-radius: 10px;
+    color: #B91853;
+    padding: 20px;
 }
 
-.container:last-child {
-    border-radius: 10px;
+.biglietto .container {
+    border-radius: 0px;
+    padding: 20px;
+    color: black;
 }
 
 .form-input {
-    margin: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.form-input, .info-biglietto-aperto {
-    padding: 25px;
+.nome-cognome, .kilometri, .fascia-eta {
+    display: inline-block;
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select {
+   margin-top: 15px;
+   border: 1px solid #B91853;
+   border-radius: 5px;
+   padding: 5px;
+   font-size: 15px;
+   text-align: center;
+
 }
 
 .buttons {
     text-align: center;
-    margin-top: 20px;
+}
+
+.button-style {
+    color: #B91853;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px;
+    margin-right: 20px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.button-style:hover {
+    border-color: #E5934C;
 }
 
 th, td {
@@ -49,10 +85,26 @@ th, td {
     display: none;
 }
 
+table {
+    text-align: center;
+}
+
 .biglietto.biglietto-aperto {
     display: block;
 }
 
 .biglietto.biglietto-chiuso {
     display: none;
+}
+
+th:first-child, td:first-child {
+    background-color: grey;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.biglietto h1 {
+    margin-bottom: 0;
 }
